@@ -1,0 +1,8 @@
+这是pxe的部署步骤
+安装方法
+前言:
+执行脚本
+1. mkdir -p /var/ftp/pub 把DVD挂载在此目录上
+2. ./install.sh 默认安装
+3  ./init_system.sh 初始化系统
+4. ./reset.sh 修改配置文件

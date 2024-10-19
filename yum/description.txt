@@ -1,0 +1,8 @@
+这是yum的部署步骤,基于nginx
+web服务做了域名重定向和https加密
+安装方法
+前言:
+按照脚本顺序1/2分别执行
+
+1. ./start-web.sh
+2. ./sync-packages.sh

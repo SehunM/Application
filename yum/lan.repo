@@ -1,0 +1,91 @@
+# 
+# lan.repo
+#
+# This is an internal yum source that can be used without an external connection. 
+# The web page url is https://www.yumlocal.com
+#
+# This server has docker-ce
+#                kubernetes
+#                mongodb
+#                epel 
+#                centos
+#
+# Please contact the author if necessary:
+# Emal: 2271556865@qq.com
+
+# Container
+[docker-ce-stable]
+name=Docker-Ce-Stable
+baseurl=https://www.yumlocal.com/docker-ce-stable
+gpgkey=https://www.yumlocal.com/docker-ce-stable/private/RPM-GPG-DOCER-CE-KEY
+gpgcheck=1
+enabled=1
+sslverify=0
+
+[kubernetes-v1.29]
+name=K8s-V1.29
+baseurl=https://www.yumlocal.com/kubernetes/k8s-v1.29/$basearch
+gpgkey=https://www.yumlocal.com/kubernetes/k8s-v1.29/$basearch/private/repomd.xml.key
+gpgcheck=1
+enabled=1
+sslverify=0
+
+[kubernetes-v1.30]
+name=K8s-V1.30
+baseurl=https://www.yumlocal.com/kubernetes/k8s-v1.30/$basearch
+gpgkey=https://www.yumlocal.com/kubernetes/k8s-v1.30/$basearch/private/repomd.xml.key
+gpgcheck=1
+enabled=1
+sslverify=0
+
+[kubernetes-v1.31]
+name=K8s-V1.31
+baseurl=https://www.yumlocal.com/kubernetes/k8s-v1.31/$basearch
+gpgkey=https://www.yumlocal.com/kubernetes/k8s-v1.31/$basearch/private/repomd.xml.key
+gpgcheck=1
+enabled=1
+sslverify=0
+
+# CentOS base
+[base]
+name=CentOS-Base
+baseurl=https://www.yumlocal.com/centos/$releasever/os/$basearch/base
+gpgkey=https://www.yumlocal.com/centos/$releasever/os/$basearch/private/RPM-GPG-KEY-CentOS-7
+gpgcheck=1
+enabled=1
+sslverify=0
+
+[updates]
+name=CentOS-Updates
+baseurl=https://www.yumlocal.com/centos/$releasever/os/$basearch/updates
+gpgkey=https://www.yumlocal.com/centos/$releasever/os/$basearch/private/RPM-GPG-KEY-CentOS-7
+gpgcheck=1
+enabled=1
+sslverify=0
+
+[extras]
+name=CentOS-Extras
+baseurl=https://www.yumlocal.com/centos/$releasever/os/$basearch/extras
+gpgkey=https://www.yumlocal.com/centos/$releasever/os/$basearch/private/RPM-GPG-KEY-CentOS-7
+gpgcheck=1
+enabled=1
+sslverify=0
+
+# Epel
+[epel]
+name=Epel
+baseurl=https://www.yumlocal.com/epel
+gpgkey=https://www.yumlocal.com/epel/private/RPM-GPG-KEY-EPEL-7
+gpgcheck=1
+enabled=1
+sslverify=0
+
+# Mongodb
+[mongodb-org-7.0]
+name=Mongodb-Org-7.0
+baseurl=https://www.yumlocal.com/mongodb-org-7.0
+gpgkey=https://www.yumlocal.com/mongodb-org-7.0/private/server-7.0.asc
+gpgcheck=1
+enabled=1
+sslverify=0
+

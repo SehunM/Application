@@ -1,0 +1,10 @@
+$TTL 1D
+@	IN SOA	yumlocal.com. rname.invalid. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+       	NS	dns.yumlocal.com.
+dns    IN A	172.17.0.253
+www    IN A	172.17.0.254
