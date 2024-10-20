@@ -2,4 +2,4 @@
 安装方法
 前言:
 执行脚本
-./start-web.sh
+./init.sh
