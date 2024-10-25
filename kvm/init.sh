@@ -111,7 +111,7 @@ function install_kvm(){
     printf '更新系统全部软件包中.....'
     if [ $count -eq 0 ];then 
        if (yum upgrade -y >& /dev/null);then
-           sed -i '/local/ s:count=0:count=1:g' $0
+           sed -i '/^[ ]*local[ ]*c\(.*\)/ s:count=0:count=1:g' $0
            echo -e "\r\e[70G\e[32;1m[OK]\e[39;0m" 
        fi
     else
